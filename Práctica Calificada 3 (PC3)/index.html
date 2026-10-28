@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IngeArq Solutions | Portafolio Interactivo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-custom-nav sticky-top shadow">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-4 text-white d-flex align-items-center" href="#inicio">
+                <span class="me-2">🏢</span> IngeArq <span class="text-info ms-1">Solutions</span>
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-lg-center gap-lg-2">
+                    <li class="nav-item"><a class="nav-link active" href="#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#proyectos">Efectos 2D</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experiencia-3d">Modelo 3D</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#estadisticas">Estadísticas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-5" id="inicio">
+        
+        <section class="row align-items-center py-5 hero-card rounded-5 shadow-lg mb-5 p-4 p-lg-5 bg-white border border-light">
+            <div class="col-lg-7 mb-4 mb-lg-0">
+                <span class="badge bg-primary-subtle text-primary fw-semibold px-3 py-2 rounded-pill mb-3">Ingeniería & Innovación Web</span>
+                <h1 class="titulo-animado display-4 fw-bold text-dark mb-3">Plataforma Digital Interactiva</h1>
+                <p class="lead text-muted mb-0">Desarrollo de interfaces gráficas web avanzadas con transiciones fluidas, transformaciones geométricas espaciales y componentes responsivos de alto rendimiento.</p>
+            </div>
+            <div class="col-lg-5 text-center">
+                <div class="image-wrapper shadow-sm rounded-4 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=600&auto=format&fit=crop" alt="Edificio corporativo IngeArq" class="img-fluid w-100 hover-zoom">
+                </div>
+            </div>
+        </section>
+
+        <section id="proyectos" class="mb-5 py-3">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold text-dark">Transformaciones 2D & Transiciones Suaves</h2>
+                <p class="text-muted">Interactúa con las tarjetas para activar los operadores geométricos de rotación, escala y traslación.</p>
+            </div>
+            
+            <div class="row g-4 mb-4">
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm p-4 text-center caja-2d caja-rotar rounded-4 h-100">
+                        <div class="icon-circle mb-3 mx-auto bg-success-subtle text-success">🔄</div>
+                        <h4 class="fw-bold mb-2">Rotación Espacial</h4>
+                        <p class="text-muted small">Modifica el ángulo de inclinación del contenedor mediante la función <code>rotate()</code>.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm p-4 text-center caja-2d caja-escalar rounded-4 h-100">
+                        <div class="icon-circle mb-3 mx-auto bg-primary-subtle text-primary">🔍</div>
+                        <h4 class="fw-bold mb-2">Escalado Dinámico</h4>
+                        <p class="text-muted small">Amplía las dimensiones volumétricas del elemento utilizando <code>scale()</code>.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm p-4 text-center caja-2d caja-trasladar rounded-4 h-100">
+                        <div class="icon-circle mb-3 mx-auto bg-warning-subtle text-warning">⬆️</div>
+                        <h4 class="fw-bold mb-2">Traslación Vectorial</h4>
+                        <p class="text-muted small">Desplaza la posición del bloque sobre el eje vertical con <code>translateY()</code>.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card border-0 shadow-sm p-4 p-md-5 rounded-4 bg-white mt-4">
+                <h3 class="fw-bold text-dark mb-3">Laboratorio de Pruebas 2D (Ejemplos Visuales)</h3>
+                <p class="text-muted small mb-4">Coloca el cursor sobre cada panel interactivo para visualizar el comportamiento de las propiedades CSS avanzadas combinadas con contenido gráfico real:</p>
+                
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card border-0 shadow-sm rounded-4 overflow-hidden h-100 demo-box-skew">
+                            <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?q=80&w=500&auto=format&fit=crop" alt="Desarrollo Web 2D" class="card-img-top img-fluid" style="height: 140px; object-fit: cover;">
+                            <div class="card-body text-center p-3">
+                                <h5 class="fw-bold text-primary fs-6">Inclinación (Skew)</h5>
+                                <p class="text-muted small mb-0">Deforma el plano en los ejes X e Y mediante <code>skew(10deg, 5deg)</code>.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="card border-0 shadow-sm rounded-4 overflow-hidden h-100 demo-box-matrix">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=500&auto=format&fit=crop" alt="Matriz Geométrica" class="card-img-top img-fluid" style="height: 140px; object-fit: cover;">
+                            <div class="card-body text-center p-3">
+                                <h5 class="fw-bold text-success fs-6">Matriz Geométrica</h5>
+                                <p class="text-muted small mb-0">Combina transformaciones con <code>matrix()</code>.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card border-0 shadow-sm rounded-4 overflow-hidden h-100 demo-box-origin">
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=500&auto=format&fit=crop" alt="Punto de Origen" class="card-img-top img-fluid" style="height: 140px; object-fit: cover;">
+                            <div class="card-body text-center p-3">
+                                <h5 class="fw-bold text-warning fs-6">Punto de Origen</h5>
+                                <p class="text-muted small mb-0">Modifica el eje de rotación con <code>transform-origin</code>.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experiencia-3d" class="mb-5 py-4">
+            <div class="text-center mb-4">
+                <h2 class="fw-bold text-dark">Efecto Visual Tridimensional (3D)</h2>
+                <p class="text-muted">Simulación de profundidad espacial con <code>perspective</code> y rotación en ejes coordinados.</p>
+            </div>
+            
+            <div class="row justify-content-center mb-4">
+                <div class="col-md-7">
+                    <div class="escena-3d">
+                        <div class="tarjeta-3d">
+                            <div class="cara cara-frente rounded-4 p-4 text-center d-flex flex-column justify-content-center align-items-center">
+                                <div class="fs-1 mb-2">🏛️</div>
+                                <h3 class="fw-bold mb-2">Arquitectura Interactiva 3D</h3>
+                                <p class="mb-0 small text-light opacity-75">Coloca el cursor sobre este bloque para activar el giro espacial de 180°.</p>
+                            </div>
+                            <div class="cara cara-detras rounded-4 p-4 text-center d-flex flex-column justify-content-center align-items-center">
+                                <div class="fs-1 mb-2">🎯</div>
+                                <h3 class="fw-bold mb-2">Renderizado de Hardware</h3>
+                                <p class="mb-0 small text-light opacity-75">Optimizado con <code>transform-style: preserve-3d</code> y ocultación de caras posteriores.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card border-0 shadow-sm p-4 p-md-5 rounded-4 bg-white mt-4">
+                <h3 class="fw-bold text-dark mb-3">Galería de Modelos Tridimensionales</h3>
+                <p class="text-muted small mb-4">Demostración de profundidad y rotación espacial aplicada a componentes de infraestructura:</p>
+                
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="card border-0 shadow-sm rounded-4 overflow-hidden h-100 demo-card-3d-1">
+                            <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=600&auto=format&fit=crop" alt="Estructura 3D X" class="card-img-top img-fluid" style="height: 160px; object-fit: cover;">
+                            <div class="card-body text-center p-3">
+                                <h5 class="fw-bold text-dark fs-5">Rotación en Eje X</h5>
+                                <p class="text-muted small mb-0">Inclinación tridimensional utilizando <code>rotateX(20deg)</code>.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="card border-0 shadow-sm rounded-4 overflow-hidden h-100 demo-card-3d-2">
+                            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=600&auto=format&fit=crop" alt="Efecto Profundidad" class="card-img-top img-fluid" style="height: 160px; object-fit: cover;">
+                            <div class="card-body text-center p-3">
+                                <h5 class="fw-bold text-dark fs-5">Efecto Profundidad (TranslateZ)</h5>
+                                <p class="text-muted small mb-0">Acercamiento espacial volumétrico con <code>translateZ(25px)</code>.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="estadisticas" class="row g-4 mb-5 py-4">
+            <div class="col-12 text-center mb-2">
+                <h2 class="fw-bold text-dark">Métricas & Rendimiento Corporativo</h2>
+                <p class="text-muted">Indicadores en tiempo real del ecosistema de software y servidores de IngeArq Solutions.</p>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card border-0 shadow-sm rounded-4 p-4 h-100 stat-card">
+                    <div class="d-flex align-items-center justify-content-between mb-3">
+                        <span class="badge bg-primary-subtle text-primary fw-bold px-3 py-2 rounded-pill">Q1 - Q4 2026</span>
+                        <div class="stat-icon-box bg-primary-subtle text-primary rounded-3 d-flex align-items-center justify-content-center" style="width: 45px; height: 45px;">
+                            <i class="bi bi-graph-up-arrow fs-5"></i>
+                        </div>
+                    </div>
+                    <h2 class="fw-bold text-dark display-5 mb-1">+1,450</h2>
+                    <p class="text-muted fw-medium mb-3">Proyectos Desarrollados</p>
+                    
+                    <div class="mt-auto">
+                        <div class="d-flex justify-content-between small text-muted mb-1">
+                            <span>Eficiencia Operativa Global</span>
+                            <span class="fw-bold text-dark">92%</span>
+                        </div>
+                        <div class="progress" style="height: 8px;">
+                            <div class="progress-bar bg-primary rounded-pill" role="progressbar" style="width: 92%" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card border-0 shadow-sm rounded-4 p-4 h-100 stat-card">
+                    <div class="d-flex align-items-center justify-content-between mb-3">
+                        <span class="badge bg-success-subtle text-success fw-bold px-3 py-2 rounded-pill">SLA 99.9%</span>
+                        <div class="stat-icon-box bg-success-subtle text-success rounded-3 d-flex align-items-center justify-content-center" style="width: 45px; height: 45px;">
+                            <i class="bi bi-shield-check fs-5"></i>
+                        </div>
+                    </div>
+                    <h2 class="fw-bold text-dark display-5 mb-1">99.8%</h2>
+                    <p class="text-muted fw-medium mb-3">Disponibilidad de Servidores</p>
+                    
+                    <div class="mt-auto">
+                        <div class="d-flex justify-content-between small text-muted mb-1">
+                            <span>Estabilidad del Sistema</span>
+                            <span class="fw-bold text-dark">99.8%</span>
+                        </div>
+                        <div class="progress" style="height: 8px;">
+                            <div class="progress-bar bg-success rounded-pill" role="progressbar" style="width: 99.8%" aria-valuenow="99.8" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card border-0 shadow-sm rounded-4 p-4 h-100 stat-card">
+                    <div class="d-flex align-items-center justify-content-between mb-3">
+                        <span class="badge bg-warning-subtle text-warning fw-bold px-3 py-2 rounded-pill">Soporte 24/7</span>
+                        <div class="stat-icon-box bg-warning-subtle text-warning rounded-3 d-flex align-items-center justify-content-center" style="width: 45px; height: 45px;">
+                            <i class="bi bi-headset fs-5"></i>
+                        </div>
+                    </div>
+                    <h2 class="fw-bold text-dark display-5 mb-1">24/7</h2>
+                    <p class="text-muted fw-medium mb-3">Soporte Tecnológico</p>
+                    
+                    <div class="mt-auto">
+                        <div class="d-flex justify-content-between small text-muted mb-1">
+                            <span>Índice de Resolución</span>
+                            <span class="fw-bold text-dark">99.5%</span>
+                        </div>
+                        <div class="progress" style="height: 8px;">
+                            <div class="progress-bar bg-warning rounded-pill" role="progressbar" style="width: 99.5%" aria-valuenow="99.5" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="row g-4 mb-4">
+            <div class="col-lg-7">
+                <div class="card border-0 shadow-lg p-4 p-md-5 rounded-4 bg-white h-100">
+                    <h2 class="mb-4 fw-bold text-dark fs-3">Formulario de Contacto</h2>
+                    <form>
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label fw-semibold small text-muted">Nombre Completo</label>
+                            <input type="text" class="form-control form-control-lg bg-light border-0 fs-6" id="nombre" placeholder="Ej. Carlos Mendoza" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label fw-semibold small text-muted">Correo Electrónico</label>
+                            <input type="email" class="form-control form-control-lg bg-light border-0 fs-6" id="email" placeholder="carlos@empresa.com" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="mensaje" class="form-label fw-semibold small text-muted">Mensaje o Requerimiento</label>
+                            <textarea class="form-control form-control-lg bg-light border-0 fs-6" id="mensaje" rows="3" placeholder="Detalle su solicitud..." required></textarea>
+                        </div>
+                        
+                        <div class="d-grid gap-2 mt-4">
+                            <button type="submit" class="btn btn-primary btn-lg shadow-sm fw-semibold">Enviar Mensaje Corporativo</button>
+                            <button type="reset" class="btn btn-outline-secondary btn-lg border-0 text-muted">Limpiar Campos</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="col-lg-5">
+                <div class="card border-0 shadow-lg p-4 rounded-4 bg-white h-100 d-flex flex-column justify-content-between">
+                    <div>
+                        <h3 class="fw-bold text-dark fs-4 mb-3">📍 Centro de Operaciones</h3>
+                        
+                        <div class="map-container rounded-4 overflow-hidden position-relative shadow-sm mb-4">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.638096057391!2d-77.04275402518428!3d-12.046373741870685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8c3a933235b%3A0x6d11f67645f743c3!2sLima%2C%20Peru!5e0!3m2!1ses!2spe!4v1700000000000!5m2!1ses!2spe" width="100%" height="160" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <div class="map-badge bg-dark text-white px-3 py-1 rounded-pill small shadow">Sede Central Activa</div>
+                        </div>
+
+                        <ul class="list-unstyled small text-muted mb-0">
+                            <li class="mb-2">🏢 <strong>Dirección:</strong> Av. Javier Prado Este 450, Lima - Perú</li>
+                            <li class="mb-2">📞 <strong>Teléfono:</strong> +51 948202619</li>
+                            <li class="mb-3">✉️ <strong>Correo:</strong> contacto@ingearq-solutions.com</li>
+                            
+                            <li class="pt-2 border-top">
+                                <span class="fw-semibold text-dark d-block mb-2">Redes Sociales Oficiales:</span>
+                                <div class="d-flex flex-wrap gap-2">
+                                    <a href="#" class="btn btn-sm btn-outline-primary d-flex align-items-center gap-1">
+                                        <i class="bi bi-linkedin"></i> LinkedIn
+                                    </a>
+                                    <a href="#" class="btn btn-sm btn-outline-dark d-flex align-items-center gap-1">
+                                        <i class="bi bi-github"></i> GitHub
+                                    </a>
+                                    <a href="#" class="btn btn-sm btn-outline-info d-flex align-items-center gap-1 text-dark">
+                                        <i class="bi bi-twitter-x"></i> Twitter
+                                    </a>
+                                    <a href="#" class="btn btn-sm btn-outline-danger d-flex align-items-center gap-1">
+                                        <i class="bi bi-instagram"></i> Instagram
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <div class="container">
+            <p class="mb-1 fw-semibold">IngeArq Solutions © 2026</p>
+            <p class="small text-muted mb-0">Práctica Calificada 3 — Hojas de Estilo en Cascada Avanzado | Universidad Tecnológica del Perú</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
